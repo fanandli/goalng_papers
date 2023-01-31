@@ -8,7 +8,7 @@
 
 #### 需求
 
-我们在main函数中，起两个goroutine，假设这两个goroutine一直在listening,，现在我们想要主动的通知这两个goroutine结束，应该如何实现控制？
+我们在main函数中，起两个goroutine，假设这两个goroutine一直在listening,现在我们想要主动的通知这两个goroutine结束，应该如何实现控制？
 
 #### 使用channel + select
 
@@ -106,7 +106,7 @@ func main() {
 }
 ```
 
-这里使用Context也实现了预期的效。
+这里使用Context也实现了预期的效果。
 
 总的来说：context是官方提供的一组**并发控制**的工具。
 
